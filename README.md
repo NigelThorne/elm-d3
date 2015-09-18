@@ -44,7 +44,7 @@ circles, and move your mouse up and down to change their brightness.
 In order to effectively use elm-d3, you should be familiar with the core
 concepts of D3.js, including data joins, nested selections, and reusable
 charts. The following series of blog posts by [@mbostock][] introduce these
-concepts quite nicely, and independently of elm-d3 should be ready by anbody
+concepts quite nicely, and independently of elm-d3 should be ready by anybody
 that is interested developing their D3.js skills:
 
 * [Thinking in Joins][join]
@@ -98,13 +98,13 @@ d3.selectAll("path")
 
 Sequencing is another operation that's slightly different in elm-d3. In Javascript,
 there's a common pattern where you apply a data bound to a selection, assign it
-to a variable, and then apply `enter()`, update, and `exit()` operations to the
+to a variable, and then apply `enter()`, `update()`, and `exit()` operations to the
 variable. In place of sequencing, you would use the `|-` infix operator. Its
 use is illustrated in the example above. You can see the equivalent code in JavaScript below.
 
 ```javascript
 var path = d3.selectAll('path')
-    .bind(function(d) { ... });
+    .data(function(d) { ... });
 
 path.enter()
   .append('path');

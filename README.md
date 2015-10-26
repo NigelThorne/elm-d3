@@ -98,7 +98,7 @@ d3.selectAll("path")
 
 Sequencing is another operation that's slightly different in elm-d3. In Javascript,
 there's a common pattern where you apply a data bound to a selection, assign it
-to a variable, and then apply `enter()`, `update()`, and `exit()` operations to the
+to a variable, and then apply `enter()`, update, and `exit()` operations to the
 variable. In place of sequencing, you would use the `|-` infix operator. Its
 use is illustrated in the example above. You can see the equivalent code in JavaScript below.
 
